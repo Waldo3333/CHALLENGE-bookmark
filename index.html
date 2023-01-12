@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!----------------------------------------------------------------------------hamburger----->
+    <div id="hamburger--display" class="hamburger--display">
+      <div class="hamburger--header">
+        <img src="./images/logo-bookmark.svg" alt="" class="hamburger--logo" />
+        <button id="hamburger--close" onclick="hamburgerClose()">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+      </div>
+      <div class="hamburger--nav--button--container">
+        <button id="features" class="hamburger--nav--button">features</button>
+        <button id="pricing" class="hamburger--nav--button">pricing</button>
+        <button id="contact" class="hamburger--nav--button border--bottom">
+          contact
+        </button>
+        <button id="log in" class="hamburger--nav--button--login">login</button>
+      </div>
+      <div class="hamburger--nav--network">
+        <a href=""
+          ><img
+            src="./images/icon-facebook.svg"
+            alt=""
+            class="hamburger--network"
+        /></a>
+        <a href="">
+          <img
+            src="./images/icon-twitter.svg"
+            alt=""
+            class="hamburger--network"
+        /></a>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------nav----->
+    <div id="nav--logo" class="nav--logo">
+      <img src="./images/logo-bookmark.svg" alt="" />
+      <button class="hamburger--button" onclick="hamburger()">
+        <img src="./images/icon-hamburger.svg" alt="" />
+      </button>
+    </div>
+
+    <nav id="nav" class="nav">
+      <button id="features" class="navButton">features</button>
+      <button id="pricing" class="navButton">pricing</button>
+      <button id="contact" class="navButton">contact</button>
+      <button id="log in" class="buttonRed">login</button>
+    </nav>
+
+    <header id="header" class="header">
+      <div id="header--image--mobile">
+        <img src="./images/illustration-hero.svg" alt="" />
+      </div>
+      <div id="header--text">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to oraanize vour tavourite websites. Open
+          a new browser tab and see your sites loar instantly. Try it for free.
+        </p>
+        <button class="button--chrome">Get it on Chrome</button>
+        <button class="button--firefox">Get it on Firefox</button>
+      </div>
+      <div id="header--image">
+        <img src="./images/illustration-hero.svg" alt="" />
+      </div>
+    </header>
+    <!---------------------------------------------------------------------------features-->
+    <div id="features" class="features">
+      <div id="features--header" class="features--header">
+        <h1>Features</h1>
+        <p>
+          Our aim is to make it quick and easy for you to access your favorites
+          websites. your bookmarks sync between you devices so you can access
+          them on the go.
+        </p>
+      </div>
+      <!----------------------------------------------------------------- bouton features-->
+      <div class="features--button">
+        <button
+          id="button--bookmarketing"
+          class="features--choice--button features--selected--button"
+          onclick="bookmark()"
+        >
+          Simple Bookmarketing
+        </button>
+        <button
+          id="button--searching"
+          class="features--choice--button"
+          onclick="searching()"
+        >
+          Speedy Searching
+        </button>
+        <button
+          id="button--sharing"
+          class="features--choice--button"
+          onclick="sharing()"
+        >
+          Easy Sharing
+        </button>
+      </div>
+      <!------------------------------ Changer le display des features en fonction du clic -->
+      <div class="display--features">
+        <div id="features--image" class="features--image">
+          <img src="./images/illustration-features-tab-1.svg" alt="" />
+        </div>
+        <div id="features--text" class="features--text">
+          <h1 id="features--text--title">Bookmark in one click</h1>
+          <p id="features--text--text">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favorite sites
+          </p>
+          <button id="features--info--button" class="features--info--button">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------------ Extention download -->
+    <div id="extension" class="extension">
+      <h1>Download the extension</h1>
+      <p>
+        We ve dot more browsers in the oipeline.Please do let us know if you've
+        got a favorite you'd like us to prioritize.
+      </p>
+    </div>
+
+    <div class="extension--button--container">
+      <div class="extension--chrome downloadButton">
+        <img src="./images/logo-chrome.svg" alt="" />
+        <div class="extension--button--text">
+          <h5>Add to Chrome</h5>
+          <p>Minimum Version 62</p>
+        </div>
+        <button>Add & Instal Extension</button>
+      </div>
+      <div class="extension--firefox downloadButton">
+        <img src="./images/logo-firefox.svg" alt="" />
+        <div class="extension--button--text">
+          <h5>Add to Firefox</h5>
+          <p>Minimum Version 55</p>
+        </div>
+        <button>Add & Instal Extension</button>
+      </div>
+      <div class="extension--opera downloadButton">
+        <img src="./images/logo-opera.svg" alt="" />
+        <div class="extension--button--text">
+          <h5>Add to Opera</h5>
+          <p>Minimum Version 46</p>
+        </div>
+        <button>Add & Instal Extension</button>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------ Questions -->
+    <div id="questions" class="questions">
+      <div class="quesiton--header">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to mail us.
+        </p>
+      </div>
+      <div class="question--button">
+        <ul class="accordion--list">
+          <li>
+            <button class="accordion--button">
+              What is bookmark?
+              <img
+                src="./images/icon-arrow.svg"
+                alt=""
+                class="question--button--arrow"
+              />
+            </button>
+            <div class="accordion--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              at cursus tellus. Sed condimentum dignissim libero. Morbi at
+              sollicitudin nisi. Proin sagittis vestibulum aliquet. Fusce
+              elementum bibendum auctor. Nunc egestas venenatis ligula, at
+              facilisis neque ornare at. Mauris ut auctor quam.
+            </div>
+          </li>
+          <li>
+            <button class="accordion--button">
+              How can I request a new browser?
+              <img
+                src="./images/icon-arrow.svg"
+                alt=""
+                class="question--button--arrow"
+              />
+            </button>
+            <div class="accordion--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              at cursus tellus. Sed condimentum dignissim libero. Morbi at
+              sollicitudin nisi. Proin sagittis vestibulum aliquet. Fusce
+              elementum bibendum auctor. Nunc egestas venenatis ligula, at
+              facilisis neque ornare at. Mauris ut auctor quam.
+            </div>
+          </li>
+          <li>
+            <button class="accordion--button">
+              Is there a mobile app?
+              <img
+                src="./images/icon-arrow.svg"
+                alt=""
+                class="question--button--arrow"
+              />
+            </button>
+            <div class="accordion--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              at cursus tellus. Sed condimentum dignissim libero. Morbi at
+              sollicitudin nisi. Proin sagittis vestibulum aliquet. Fusce
+              elementum bibendum auctor. Nunc egestas venenatis ligula, at
+              facilisis neque ornare at. Mauris ut auctor quam.
+            </div>
+          </li>
+          <li>
+            <button class="accordion--button">
+              What about other Chromium browsers?
+              <img
+                src="./images/icon-arrow.svg"
+                alt=""
+                class="question--button--arrow"
+              />
+            </button>
+            <div class="accordion--text accordion--button--last">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              at cursus tellus. Sed condimentum dignissim libero. Morbi at
+              sollicitudin nisi. Proin sagittis vestibulum aliquet. Fusce
+              elementum bibendum auctor. Nunc egestas venenatis ligula, at
+              facilisis neque ornare at. Mauris ut auctor quam.
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="questions--info--button">More Info</button>
+    </div>
+    <!------------------------------------------------------------------------ footer top -->
+    <div class="footer--top">
+      <div class="footer--top--coontent">
+        <p>35.000+ Already Joined</p>
+        <h1>Stay up-to-date with what we're doing</h1>
+      </div>
+      <div class="footer--input">
+        <input
+          type="text"
+          name=""
+          id="email"
+          placeholder="Enter your email adress"
+        />
+        <button id="footer--top--button" class="footer--top--button">
+          Contact Us
+        </button>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------ footer down -->
+    <div class="footer--down">
+      <div class="footer--down--content">
+        <div id="footer--logo" class="footer--logo">
+          <p>BOOKMARK</p>
+          <button id="features" class="footerButton">features</button>
+          <button id="pricing" class="footerButton">pricing</button>
+          <button id="contact" class="footerButton">contact</button>
+        </div>
+        <div class="footer--down--network">
+          <a href=""
+            ><img src="./images/icon-facebook.svg" alt="" class="svg-logo"
+          /></a>
+          <a href="">
+            <img src="./images/icon-twitter.svg" alt="" class="svg-logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,474 @@
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.hamburger--button {
+  display: none;
+}
+.hamburger--display {
+  display: none;
+}
+
+#header--image--mobile {
+  display: none;
+}
+
+/*---------------------------------------------------------NAV EN HAUT ------------------*/
+
+.nav--logo {
+  position: absolute;
+  left: 150px;
+  top: 60px;
+}
+.nav {
+  position: absolute;
+  right: 150px;
+  top: 60px;
+  width: 35vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonRed {
+  font-family: "Rubik", sans-serif;
+  width: 110px;
+  height: 40px;
+  background-color: rgb(250, 87, 87);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border: 2px solid rgb(250, 87, 87);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.buttonRed:hover {
+  color: rgb(250, 87, 87);
+  background-color: white;
+}
+
+.navButton {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: hsl(229, 31%, 21%);
+  background-color: white;
+  border: none;
+}
+.navButton:hover {
+  color: rgb(250, 87, 87);
+}
+/*---------------------------------------------------------- HEADER------------------*/
+.header {
+  margin-top: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 45px;
+}
+.header p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(198, 198, 198);
+}
+#header--text {
+  width: 500px;
+  margin-left: 130px;
+}
+#header--image {
+  margin-right: 40px;
+}
+
+.header button {
+  font-family: "Rubik", sans-serif;
+  width: 160px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(255, 229, 229, 0.696);
+  cursor: pointer;
+}
+.button--chrome {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+}
+.button--chrome:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+.button--firefox {
+  background-color: rgb(234, 241, 246);
+  border: none;
+  color: rgb(106, 106, 106);
+}
+.button--firefox:hover {
+  background-color: rgb(234, 241, 246);
+  border: 2px solid rgb(106, 106, 106);
+}
+
+/*---------------------------------------------------------- FEATURES ------------------*/
+.features--header {
+  text-align: center;
+  margin: auto;
+  width: 37vw;
+}
+
+.features--header h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.features--header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(198, 198, 198);
+}
+.features--button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 150px;
+  width: 800px;
+}
+.features--choice--button {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(166, 163, 163);
+  background-color: rgba(255, 255, 255, 0);
+  height: 75px;
+  width: 20vw;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+.features--choice--button:hover {
+  color: hsl(0, 94%, 66%);
+}
+.features--selected--button {
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+  color: rgb(42, 41, 41);
+}
+
+/*----------------------------------------------------------DISPLAY FEATURES------------------*/
+.display--features {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.features--text {
+  width: 450px;
+}
+.features--text p {
+  font-size: 18px;
+  color: rgb(166, 163, 163);
+}
+
+.features--info--button {
+  width: 120px;
+  height: 50px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(191, 191, 191, 0.697);
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+.features--info--button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+/*----------------------------------------------------DOWNLOAD EXTENSION ------------------*/
+.extension {
+  text-align: center;
+  margin: auto;
+  width: 550px;
+  margin-top: 200px;
+}
+.extension h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.extension p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(198, 198, 198);
+}
+
+.extension--button--container {
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.extension--button--text {
+}
+.extension--button--container h5 {
+  font-size: 20px;
+  margin: 0;
+}
+.extension--button--container p {
+  color: rgb(198, 198, 198);
+}
+
+.downloadButton {
+  background-image: url(./images/bg-dots.svg);
+  padding: 21px 20px 20px 20px;
+  width: 240px;
+  height: 310px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center 72%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px 0px rgba(179, 179, 179, 0.157);
+  text-align: center;
+}
+
+.extension--firefox {
+  margin-top: 70px;
+}
+
+.extension--opera {
+  margin-top: 140px;
+}
+.extension--button--container button {
+  width: 220px;
+  height: 50px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+.extension--button--container button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+/*---------------------------------------------------------- QUESTIONS ------------------*/
+.questions {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quesiton--header {
+  text-align: center;
+  margin: auto;
+  width: 520px;
+}
+.quesiton--header p {
+  font-size: 18px;
+  color: rgb(198, 198, 198);
+}
+
+.question--button {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
+  width: 550px;
+}
+
+.accordion--list {
+  list-style: none;
+}
+
+.accordion--button {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 1px solid rgb(183, 180, 180);
+}
+.accordion--button:hover {
+  color: hsl(0, 94%, 66%);
+}
+.accordion--button--last {
+  border-bottom: 1px solid rgb(183, 180, 180);
+}
+.accordion--text {
+  padding: 0 18px;
+  font-size: 16px;
+  color: rgb(144, 141, 141);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+/* Active class */
+.accordion--button.active,
+.accordion--text.active {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: 500px;
+}
+.questions--info--button {
+  margin: auto;
+  margin-top: 50px;
+  width: 120px;
+  height: 50px;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(191, 191, 191, 0.697);
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+.questions--info--button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+
+.question--button--arrow {
+  transition: 0.4s ease-out;
+}
+
+.image-reverse {
+  transform: rotate(180deg);
+}
+/*---------------------------------------------------------- FOOTER TOP ------------------*/
+.footer--top {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(231, 69%, 60%);
+  height: 400px;
+  z-index: 0;
+  top: 0px;
+  position: relative;
+}
+.footer--top--coontent {
+  width: 450px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.footer--top--coontent p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.footer--top--coontent h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.footer--input {
+  margin: auto;
+}
+
+.footer--top input {
+  width: 298px;
+  height: 47px;
+  border-radius: 5px;
+  margin-right: 15px;
+  border: none;
+}
+.footer--top input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: rgb(125, 125, 125);
+
+  padding-left: 30px;
+}
+.footer--top button {
+  font-family: "Rubik", sans-serif;
+  width: 120px;
+  height: 50px;
+  background-color: rgb(250, 87, 87);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 2px solid rgb(250, 87, 87);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.footer--top button:hover {
+  color: rgb(250, 87, 87);
+  background-color: white;
+}
+/*---------------------------------------------------------- FOOTER DOWN ------------------*/
+
+.footer--down {
+  background-color: hsl(229, 31%, 21%);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer--down--content {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--down button {
+  font-family: "Rubik", sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.footer--down button:hover {
+  color: rgb(250, 87, 87);
+}
+
+.footer--logo {
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+}
+.footer--logo p {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.footer--down--network {
+  display: flex;
+  justify-content: space-between;
+  width: 7vw;
+}
+.footer--down--network a {
+  display: flex;
+  align-items: center;
+}
+
+.svg-logo {
+  filter: brightness(1);
+}
+.svg-logo:hover {
+  filter: brightness(0) hue-rotate(120deg);
+}
