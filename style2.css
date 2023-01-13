@@ -1,34 +1,4 @@
-@media (max-width: 940px) {
-  /*----------------------------------------------------DOWNLOAD EXTENSION ------------------*/
-  .extension {
-    text-align: center;
-    margin: auto;
-    width: 350px;
-    margin-top: 200px;
-  }
-
-  .extension--button--container {
-    flex-direction: column;
-    width: 375px;
-    margin: auto;
-    margin-top: 50px;
-  }
-
-  .downloadButton {
-    margin-left: 48px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .extension--firefox {
-    margin-top: 10px;
-  }
-
-  .extension--opera {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 700px) {
+@media (max-width: 910px) {
   /*---------------------------------------------------------NAV EN HAUT ------------------*/
   .hamburger--button {
     display: inline;
@@ -138,6 +108,38 @@
   .hamburger--network:hover {
     filter: brightness(0) hue-rotate(120deg);
   }
+}
+@media (max-width: 940px) {
+  /*----------------------------------------------------DOWNLOAD EXTENSION ------------------*/
+  .extension {
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    margin-top: 200px;
+  }
+
+  .extension--button--container {
+    flex-direction: column;
+    width: 375px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .downloadButton {
+    margin-left: 48px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .extension--firefox {
+    margin-top: 10px;
+  }
+
+  .extension--opera {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
   /*---------------------------------------------------------- QUESTIONS ------------------*/
   .questions {
     display: flex;
