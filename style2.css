@@ -1,4 +1,34 @@
-@media (max-width: 400px) {
+@media (max-width: 940px) {
+  /*----------------------------------------------------DOWNLOAD EXTENSION ------------------*/
+  .extension {
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    margin-top: 200px;
+  }
+
+  .extension--button--container {
+    flex-direction: column;
+    width: 375px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .downloadButton {
+    margin-left: 48px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .extension--firefox {
+    margin-top: 10px;
+  }
+
+  .extension--opera {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
   /*---------------------------------------------------------NAV EN HAUT ------------------*/
   .hamburger--button {
     display: inline;
@@ -8,7 +38,7 @@
     position: absolute;
     top: 0;
     z-index: 1;
-    width: 375px;
+    width: 100vw;
     height: 150vh;
     background-color: hsla(229, 31%, 21%, 0.899);
   }
@@ -67,7 +97,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 320px;
+    width: 100vw;
     left: 25px;
     top: 41px;
   }
@@ -75,6 +105,7 @@
     background-color: rgba(255, 255, 255, 0);
     border: none;
     cursor: pointer;
+    margin-right: 55px;
   }
 
   .nav {
@@ -85,7 +116,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 320px;
+    width: 90vw;
     left: 25px;
     top: 41px;
   }
@@ -107,13 +138,30 @@
   .hamburger--network:hover {
     filter: brightness(0) hue-rotate(120deg);
   }
+  /*---------------------------------------------------------- QUESTIONS ------------------*/
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .quesiton--header {
+    width: 350px;
+  }
+  ul {
+    padding: 0;
+  }
+
+  .question--button {
+    flex-direction: column;
+    width: 350px;
+  }
+}
+@media (max-width: 1170px) {
   /*---------------------------------------------------------- HEADER------------------*/
   .header {
-    width: 375px;
     margin-top: 80px;
     display: flex;
-
+    text-align: center;
     flex-direction: column;
   }
   #header--image--mobile {
@@ -130,9 +178,8 @@
   }
   #header--text {
     width: 350px;
-
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    margin: auto;
   }
   .header h1 {
     font-size: 30px;
@@ -244,50 +291,7 @@
   .features--info--button {
     display: none;
   }
-  /*----------------------------------------------------DOWNLOAD EXTENSION ------------------*/
-  .extension {
-    text-align: center;
-    margin: auto;
-    width: 350px;
-    margin-top: 200px;
-  }
 
-  .extension--button--container {
-    flex-direction: column;
-    width: 375px;
-    margin-top: 50px;
-  }
-
-  .downloadButton {
-    margin-left: 48px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .extension--firefox {
-    margin-top: 10px;
-  }
-
-  .extension--opera {
-    margin-top: 10px;
-  }
-  /*---------------------------------------------------------- QUESTIONS ------------------*/
-  .questions {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .quesiton--header {
-    width: 350px;
-  }
-  ul {
-    padding: 0;
-  }
-
-  .question--button {
-    flex-direction: column;
-    width: 350px;
-  }
   /*---------------------------------------------------------- FOOTER TOP ------------------*/
 
   .footer--top--coontent {
