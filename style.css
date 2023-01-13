@@ -363,6 +363,7 @@ body {
   top: 0px;
   position: relative;
 }
+/* -------------------------------------------------FOOTER TEXTE EN BLANC*/
 .footer--top--coontent {
   width: 450px;
   color: white;
@@ -381,29 +382,68 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-
-.footer--input {
-  margin: auto;
+/* -------------------------------------------------FOOTER INPUT & BOUTON */
+.footer--input--button {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-
-.footer--top input {
+/* -------------------------------------------------FOOTER INPUT -------- */
+.error--imag--hide {
+  opacity: 1;
+}
+.error--image--active {
+  opacity: 1;
+  position: relative;
+  left: 262px;
+  top: -58px;
+}
+.input--container input {
   width: 298px;
   height: 47px;
   border-radius: 5px;
-  margin-right: 15px;
-  border: none;
 }
-.footer--top input::placeholder {
+
+.input--container input::placeholder {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   color: rgb(125, 125, 125);
-
   padding-left: 30px;
 }
+.input--container {
+  border: none;
+}
+.input--container--error {
+  width: 302px;
+  height: 44px;
+  border-radius: 11px;
+  border-bottom: 22px solid rgb(250, 87, 87);
+  border-top: 3px solid rgb(250, 87, 87);
+  border-left: 6px solid rgb(250, 87, 87);
+  border-right: 8px solid rgb(250, 87, 87);
+}
+.error--text--hide {
+  opacity: 0;
+  display: none;
+}
+
+.error--text--active {
+  display: block;
+  font-style: italic;
+  opacity: 1;
+  color: white;
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+/* -------------------------------------------------FOOTER BOUTON-------- */
 .footer--top button {
   font-family: "Rubik", sans-serif;
-  width: 120px;
+  width: 150px;
   height: 50px;
+  z-index: 1;
   background-color: rgb(250, 87, 87);
   color: white;
   font-size: 14px;
@@ -412,11 +452,13 @@ body {
   border: 2px solid rgb(250, 87, 87);
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 20px;
 }
 .footer--top button:hover {
   color: rgb(250, 87, 87);
   background-color: white;
 }
+
 /*---------------------------------------------------------- FOOTER DOWN ------------------*/
 
 .footer--down {

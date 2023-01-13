@@ -73,3 +73,21 @@ function hamburgerClose() {
   hamburger.style.display = "none";
   hide.style.display = "flex";
 }
+
+function checkMail() {
+  let myMailInput = document.getElementById("email");
+  let myMailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const message = document.getElementById("message--error");
+  const boxRouge = document.getElementById("input--mail");
+
+  if (myMailInput.value.trim() == "") {
+    message.classList.add("error--text--active");
+    boxRouge.classList.add("input--container--error");
+  } else if (myMailRegex.test(myMailInput.value) == false) {
+    message.classList.add("error--text--active");
+    boxRouge.classList.add("input--container--error");
+  } else {
+    message.classList.remove("error--text--active");
+    boxRouge.classList.remove("input--container--error");
+  }
+}

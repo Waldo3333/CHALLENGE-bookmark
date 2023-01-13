@@ -254,16 +254,35 @@
         <p>35.000+ Already Joined</p>
         <h1>Stay up-to-date with what we're doing</h1>
       </div>
-      <div class="footer--input">
-        <input
-          type="text"
-          name=""
-          id="email"
-          placeholder="Enter your email adress"
-        />
-        <button id="footer--top--button" class="footer--top--button">
-          Contact Us
-        </button>
+      <div class="footer--input--button">
+        <div id="input--mail" class="input--container">
+          <input
+            class="input--container"
+            type="text"
+            name=""
+            id="email"
+            placeholder="Enter your email adress"
+          />
+
+          <div id="message--error" class="error--text--hide">
+            <p>Whoops, make sure it's an email</p>
+            <img
+              id="error--image"
+              class="error--imag--hide error--image--active"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="button--contact--container">
+          <button
+            onclick="checkMail()"
+            id="footer--top--button"
+            class="footer--top--button"
+          >
+            Contact Us
+          </button>
+        </div>
       </div>
     </div>
     <!------------------------------------------------------------------------ footer down -->

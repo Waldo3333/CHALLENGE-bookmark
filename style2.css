@@ -9,7 +9,7 @@
     top: 0;
     z-index: 1;
     width: 100vw;
-    height: 150vh;
+    height: 729vh;
     background-color: hsla(229, 31%, 21%, 0.899);
   }
   .hamburger--nav--button--container {
@@ -293,24 +293,104 @@
   .features--info--button {
     display: none;
   }
-
+}
+@media (max-width: 700px) {
   /*---------------------------------------------------------- FOOTER TOP ------------------*/
-
+  .footer--top {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(231, 69%, 60%);
+    height: 550px;
+    z-index: 0;
+    top: 0px;
+    position: relative;
+  }
+  /* -------------------------------------------------FOOTER TEXTE EN BLANC*/
   .footer--top--coontent {
-    width: 375px;
+    width: 90vw;
+    color: white;
+    text-align: center;
+    margin: auto;
   }
-  .footer--input {
-    margin-top: 0px;
+  .footer--top--coontent p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 70px;
   }
-  .footer--top input {
+
+  .footer--top--coontent h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  /* -------------------------------------------------FOOTER INPUT & BOUTON */
+  .footer--input--button {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
-    margin-left: 35px;
+    margin-bottom: 100px;
+    align-items: center;
   }
+  /* -------------------------------------------------FOOTER INPUT -------- */
+
+  .input--container input {
+    width: 298px;
+    height: 47px;
+    border-radius: 5px;
+  }
+
+  .input--container input::placeholder {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    color: rgb(125, 125, 125);
+    padding-left: 30px;
+  }
+  .input--container {
+    border: none;
+  }
+  .input--container--error {
+    width: 302px;
+    height: 44px;
+    margin-right: 0px;
+    border-radius: 11px;
+    border-bottom: 22px solid rgb(250, 87, 87);
+    border-top: 3px solid rgb(250, 87, 87);
+    border-left: 6px solid rgb(250, 87, 87);
+    border-right: 8px solid rgb(250, 87, 87);
+  }
+  .error--text--hide {
+    opacity: 0;
+  }
+
+  .error--text--active {
+    font-style: italic;
+    opacity: 1;
+    color: white;
+    font-size: 10px;
+  }
+  /* -------------------------------------------------FOOTER BOUTON-------- */
   .footer--top button {
     font-family: "Rubik", sans-serif;
-    width: 303px;
-    margin-left: 35px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(250, 87, 87);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 2px solid rgb(250, 87, 87);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0px;
     margin-top: 10px;
+  }
+  .footer--top button:hover {
+    color: rgb(250, 87, 87);
+    background-color: white;
   }
   /*---------------------------------------------------------- FOOTER DOWN ------------------*/
 
