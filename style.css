@@ -9,7 +9,12 @@ body {
 .hamburger--display {
   display: none;
 }
-
+.hamburger--nav--button--container {
+  display: none;
+}
+.hamburger--header {
+  display: none;
+}
 #header--image--mobile {
   display: none;
 }

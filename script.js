@@ -65,13 +65,11 @@ function hamburger() {
   const hamburger = document.getElementsByClassName("hamburger--display")[0];
   const hide = document.getElementsByClassName("nav--logo")[0];
   hamburger.style.display = "block";
-  hide.style.display = "none";
 }
 function hamburgerClose() {
   const hamburger = document.getElementsByClassName("hamburger--display")[0];
   const hide = document.getElementsByClassName("nav--logo")[0];
   hamburger.style.display = "none";
-  hide.style.display = "flex";
 }
 
 function checkMail() {
